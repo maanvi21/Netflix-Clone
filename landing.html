@@ -1,0 +1,54 @@
+<?php
+    // Simulating a database query for movie data
+    $movies = [
+        "Trending Now" => ["movie1.jpg", "movie2.jpg", "movie3.jpg", "movie4.jpg", "movie5.jpg"],
+        "Top Picks for You" => ["movie6.jpg", "movie7.jpg", "movie8.jpg", "movie9.jpg", "movie10.jpg"],
+        "New Releases" => ["movie11.jpg", "movie12.jpg", "movie13.jpg", "movie14.jpg", "movie15.jpg"]
+    ];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.freepnglogos.com/uploads/netflix-logo-drawing-png-19.png" alt="Netflix Logo">
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Movies</a>
+            <a href="#">Latest</a>
+            <a href="#">My List</a>
+        </nav>
+        <div class="profile">
+            <img src="profile-icon.png" alt="User Profile">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Featured Movie/Series</h1>
+            <p>Exciting movie description goes here. Watch now!</p>
+            <button class="play">▶ Play</button>
+            <button class="more-info">ℹ More Info</button>
+        </div>
+    </section>
+
+    <?php foreach ($movies as $category => $movieList): ?>
+        <section class="movies-section">
+            <h2><?php echo $category; ?></h2>
+            <div class="movies-container">
+                <?php foreach ($movieList as $movie): ?>
+                    <img src="<?php echo $movie; ?>" alt="<?php echo pathinfo($movie, PATHINFO_FILENAME); ?>">
+                <?php endforeach; ?>
+            </div>
+        </section>
+    <?php endforeach; ?>
+</body>
+</html>
