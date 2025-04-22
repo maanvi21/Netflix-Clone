@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/a1dc92ca-091d-4ca9-a05b-8cd44bbfce61/f9368347-e982-4856-a5a4-396796381f28/RS-en-20191230-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img {
+    width: 167px;
+    height: auto;
+}
+
+.signin-link a {
+    background-color: #e50914;
+    color: white;
+    padding: 7px 17px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.signin-link a:hover {
+    background-color: #f40612;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+.signup-container {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.signup-content {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signup-form {
+    margin-top: 20px;
+}
+
+.email-input-container {
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group {
+    position: relative;
+    flex: 1;
+}
+
+.form-group input {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #8c8c8c;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 20px 0;
+    font-size: 16px;
+}
+
+.form-group input::placeholder {
+    opacity: 0;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+    pointer-events: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: 30%;
+    font-size: 12px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #bbb;
+}
+
+.get-started-button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    font-size: 1.625rem;
+    padding: 0 26px;
+    min-height: 60px;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.get-started-button:hover {
+    background-color: #f40612;
+}
+
+.features {
+    border-top: 8px solid #222;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-bottom: 8px solid #222;
+}
+
+.feature-text {
+    flex: 0 0 52%;
+    padding: 0 3rem 0 0;
+}
+
+.feature-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.feature-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.feature-img {
+    flex: 0 0 48%;
+    text-align: center;
+}
+
+.feature-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.feature-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.feature-item:nth-child(even) .feature-text {
+    padding: 0 0 0 3rem;
+}
+
+.faq-section {
+    padding: 70px 45px;
+    text-align: center;
+    border-bottom: 8px solid #222;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.faq-list {
+    max-width: 815px;
+    margin: 0 auto 60px;
+}
+
+.faq-item {
+    margin-bottom: 8px;
+}
+
+.faq-question {
+    width: 100%;
+    background-color: #303030;
+    padding: 20px 30px;
+    text-align: left;
+    font-size: 1.625rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-question:after {
+    content: '+';
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.faq-answer {
+    background-color: #303030;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    text-align: left;
+}
+
+/* For FAQ functionality - requires JavaScript to add/remove the 'active' class */
+.faq-item.active .faq-answer {
+    max-height: 1200px;
+    padding: 30px;
+}
+
+.faq-item.active .faq-question:after {
+    content: '×';
+}
+
+.faq-answer p {
+    font-size: 1.625rem;
+    margin-bottom: 20px;
+}
+
+.signup-form-footer h3 {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+footer {
+    padding: 40px 45px;
+    color: #737373;
+    font-size: 13px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+    text-align: left;
+}
+
+.footer-links a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.language-selector {
+    margin-top: 20px;
+}
+
+.language-selector select {
+    background-color: #000;
+    color: #737373;
+    padding: 10px 20px;
+    border: 1px solid #737373;
+    border-radius: 2px;
+}
+
+.netflix-clone {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* Responsive design */
+@media (max-width: 950px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .feature-item {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    
+    .feature-text {
+        padding: 0 !important;
+        margin-bottom: 30px;
+    }
+    
+    .faq-question {
+        font-size: 1.25rem;
+    }
+    
+    .faq-answer p {
+        font-size: 1.25rem;
+    }
+    
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 740px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.125rem;
+    }
+    
+    .email-input-container {
+        flex-direction: column;
+    }
+    
+    .get-started-button {
+        margin-left: 0;
+        margin-top: 15px;
+        font-size: 1rem;
+        min-height: 40px;
+    }
+    
+    .form-group input {
+        height: 50px;
+    }
+    
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .signup-container {
+        height: 500px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .feature-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .feature-text p {
+        font-size: 1.125rem;
+    }
+    
+    .faq-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    header {
+        padding: 10px 20px;
+    }
+    
+    .logo img {
+        width: 120px;
+    }
+    
+    .signin-link a {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+}

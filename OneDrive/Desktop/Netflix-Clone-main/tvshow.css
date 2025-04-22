@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #141414;
+    color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    background-color: #141414;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  nav a {
+    color: #e5e5e5;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: #fff;
+  }
+  
+  .profile img {
+    width: 32px;
+    border-radius: 4px;
+  }
+  
+  .shows-section {
+    padding: 30px 4%;
+  }
+  
+  .shows-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .shows-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+  }
+  
+  .shows-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .show-item {
+    min-width: 200px;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .show-item img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .show-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .show-item h3 {
+    margin-top: 8px;
+    font-size: 14px;
+    text-align: center;
+    color: #e5e5e5;
+  }
+  
