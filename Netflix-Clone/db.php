@@ -1,0 +1,16 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "netflix";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+// Don't echo connection success in production code
+// echo "Connected successfully!";
+?>

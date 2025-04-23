@@ -1,0 +1,116 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #141414;
+    color: #fff;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #141414;
+    z-index: 100;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  nav a {
+    color: #e5e5e5;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  
+  nav a:hover, nav a.active {
+    color: #e9e6e6;
+  }
+  
+  .profile img {
+    width: 32px;
+    border-radius: 4px;
+  }
+  
+  /* Hero Banner */
+  .hero-banner {
+    height: 50vh;
+    background: url('https://wallpapercave.com/wp/wp6374825.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 4% 50px;
+  }
+  
+  .banner-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .buttons button:hover {
+    background: #f40612;
+  }
+  
+  .banner-content p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  /* Movie Categories */
+  .movie-categories {
+    padding: 30px 4%;
+  }
+  
+  .category {
+    margin-bottom: 40px;
+  }
+  
+  .category h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  
+  .movies-grid img {
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .movies-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px 4%;
+    color: #777;
+    font-size: 13px;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+  }
+  
