@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Details</title>
-    <link rel="stylesheet" href="moviep.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix - Movie Details</title>
+  <link rel="stylesheet" href="moviep.css" />
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <div class="logo">
-            <img src="https://www.freepnglogos.com/uploads/netflix-logo-drawing-png-19.png" alt="Netflix Logo">
-        </div>
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="tvshow.html">TV Shows</a>
-            <a href="movies.html">Movies</a>
-            <a href="latest.html">Latest</a>
-            <a href="mylist.html">My List</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" />
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="tvshow.html">TV Shows</a>
+      <a href="movies.html">Movies</a>
+      <a href="latest.html">Latest</a>
+      <a href="mylist.html">My List</a>
+    </nav>
+  </header>
 
-    <!-- Movie Details -->
-    <section class="movie-details">
-        <h1 id="movieTitle">Movie Title</h1>
-        <div class="movie-poster">
-            <img id="moviePoster" src="" alt="Movie Poster">
-        </div>
-        <p id="movieDescription">Movie Description</p>
-    </section>
+  <!-- Movie Details -->
+  <main class="movie-detail">
+    <div class="movie-poster">
+      <img id="moviePoster" src="https://m.media-amazon.com/images/I/81p+xe8cbnL._AC_SL1500_.jpg" alt="Movie Poster" />
+    </div>
+    <div class="movie-info">
+      <h1 id="movieTitle">Stranger Things</h1>
+      <p id="movieDescription">
+        When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.
+      </p>
+      <div class="movie-buttons">
+        <button>Play</button>
+        <button>My List</button>
+      </div>
+    </div>
+  </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            <div class="footer-links">
-                <div class="footer-links-column">
-                    <a href="#">Audio and Subtitles</a>
-                    <a href="#">Media Center</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Contact Us</a>
-                </div>
-                <div class="footer-links-column">
-                    <a href="#">Audio Description</a>
-                    <a href="#">Investor Relations</a>
-                    <a href="#">Legal Notices</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">YouTube</a>
+    </div>
+    <div class="footer-links">
+      <a href="#">Audio and Subtitles</a>
+      <a href="#">Media Center</a>
+      <a href="#">Privacy</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Legal Notices</a>
+    </div>
+    <div class="copyright">
+      © 2025 Netflix Clone. All rights reserved.
+    </div>
+  </footer>
 
-    <script src="moviep.js"></script>
+  <!-- Don't touch this script -->
+  <script src="moviep.js"></script>
 </body>
 </html>
